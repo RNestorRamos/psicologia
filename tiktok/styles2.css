@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+ .menu{
+    background-color: rgb(240, 151, 220);
+    text-align: center;
+    vertical-align: center;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .conteiner{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .conteiner > li > a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .conteiner li:hover{
+    background-color: #ecdede3f;
+ }
+
+ .submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .conteiner li:hover .submenu{
+    display: block;
+ }
+
+ .submenu li:hover{
+    background-color: black;
+ }
+
+ .submenu li a{
+    display: block;
+    color: #fff;
+    padding: 15px 15px 15px 20px;
+ }
+
+ div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  div ul li {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+  div ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #f5eded;
+  }
+  div.menu ul li:hover > a {
+    background-color: #fff;
+    color: #241f75;
+  }
+  div ul li:hover .submenu {
+    display: block;
+    color: #241f75;
+  }
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 200px;
+    z-index: 1;
+  }
+
+  .submenu li {
+    display: block;
+  }
+  ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+li.menu-heading a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #f5eded;
+  font-weight: bold;
+}
+
+.Terapias{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.Terapia{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
